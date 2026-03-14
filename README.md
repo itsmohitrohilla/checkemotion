@@ -2,7 +2,7 @@
   <img src="logo.png" alt="emotion-ai logo" width="180"/>
 </p>
 
-<h1 align="center">emotion</h1>
+<h1 align="center">Check Emotion</h1>
 
 <p align="center">
   <strong>Give your Python functions feelings.</strong><br/>
