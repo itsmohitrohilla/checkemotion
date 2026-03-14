@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name            = "emotion-ai"
+version         = "0.2.0"
+description     = "Assign emotional personalities to Python functions via AST + runtime analysis"
+readme          = "README.md"
+requires-python = ">=3.11"
+license         = { text = "MIT" }
+keywords        = ["emotions", "ast", "profiling", "debugging", "observability"]
+
+# Zero mandatory dependencies — pure stdlib.
+# Optional: install ollama locally for LLM-powered function descriptions.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["emotion"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
